@@ -1,0 +1,127 @@
+.contact-section {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 0 20px;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #8f0c0c;
+  background: rgb(207, 248, 250); /* Retrait du fond image */
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #45d64a;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #161616;
+}
+
+.icon {
+  color: #ffbb00;
+  font-size: 1.4rem;
+}
+
+.map {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;   /* Limite la largeur du formulaire */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.input-icon {
+  position: relative;
+}
+
+.input-symbol {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #ffbb00;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;  /* Aligne inputs et bouton */
+  box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px 15px 15px 45px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button {
+  background-color: #45d64a;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}

@@ -62,7 +62,7 @@ body, html, .activities-section {
 
 .activity-image {
   width: 100%;
-  height: 180px;
+  height: 400px;
   object-fit: cover;
   border-bottom: 1px solid #ddd;
   transition: transform 0.3s ease;

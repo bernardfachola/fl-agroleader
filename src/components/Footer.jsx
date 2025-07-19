@@ -1,10 +1,11 @@
 import { FaFacebookF, FaWhatsapp, FaTiktok, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import BrandName from './BrandName';
 
 function Footer() {
   return (
     <footer style={footerStyle}>
       <div style={containerStyle}>
-        <p>© 2025 FL-AGROLEADER. Tous droits réservés. Politiques et Confidentialités</p>
+        <p>© 2025 <BrandName />. Tous droits réservés. Politiques et Confidentialités</p>
         <div style={iconsContainer}>
           <a href="https://www.facebook.com/FL-AGROLEADER" target="_blank" rel="noopener noreferrer" style={iconLink}>
             <FaFacebookF />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import BrandName from './BrandName';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,10 +18,11 @@ function Navbar() {
       <div className="navbar-content">
         <div className="logo">
           <img
-            src="/src/assets/logo.jpg"
+            src="/src/assets/logo.jpeg"
             alt="Logo FL-AGROLEADER"
           />
-          <span className="oki"><em>FL AGRO LEADER</em></span>
+          <BrandName />
+          <span className="oki"></span>
         </div>
 
         <button className="hamburger" onClick={toggleMenu} aria-label="Menu">

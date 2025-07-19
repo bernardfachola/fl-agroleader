@@ -1,31 +1,86 @@
 import React, { useState } from 'react';
 import './Gallery.css';
+import BrandName from '../components/BrandName';  
 
 const images = [
   {
-    src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80',
+    src: '/src/assets/legume.jpeg',
     alt: 'Production de légumes',
-    caption: 'Production de légumes bio',
+    caption: 'Légumes Gboman',
   },
   {
-    src: 'https://images.unsplash.com/photo-1518655048521-f130df041f66?auto=format&fit=crop&w=600&q=80',
-    alt: 'Élevage de poulets',
-    caption: 'Élevage respectueux de poulets',
+    src: '/src/assets/piment.jpeg',
+    caption: 'Piment',
   },
+  // {
+  //   src: '/src/assets/papagne.jpeg',
+  //   alt: 'Formation agricole',
+  //   caption: 'Sessions de formation',
+  // },
   {
-    src: 'https://images.unsplash.com/photo-1486308510493-cb32ecb78a1c?auto=format&fit=crop&w=600&q=80',
-    alt: 'Formation agricole',
-    caption: 'Sessions de formation',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1524594157360-d3bcf23f4e59?auto=format&fit=crop&w=600&q=80',
+    src: '/src/assets/tomate.jpeg',
     alt: 'Récolte des tomates',
     caption: 'Récolte des tomates fraîches',
   },
   {
-    src: 'https://images.unsplash.com/photo-1498816340080-512e0d6b42ca?auto=format&fit=crop&w=600&q=80',
+    src: '/src/assets/chayo.jpeg',
     alt: 'Énergie renouvelable',
-    caption: 'Installation d’énergie solaire',
+    caption: 'Chayo',
+  },
+  {
+    src: '/src/assets/amarente.jpeg',
+    alt: 'Énergie renouvelable',
+    caption: 'Amarente',
+  },
+  {
+    src: '/src/assets/carrotte.jpeg',
+    alt: 'Énergie renouvelable',
+    caption: 'Carrotte',
+  },
+  {
+    src: '/src/assets/feuille.jpeg',
+    alt: 'Énergie renouvelable',
+    caption: 'Feuille d,Epignard',
+  },
+  {
+    src: '/src/assets/gombo.jpeg',
+    alt: 'Énergie renouvelable',
+    caption: 'Gombo',
+  },
+
+   {
+    src: '/src/assets/Laitue.jpeg',
+    alt: 'Énergie renouvelable',
+    caption: 'Laitue',
+  },
+
+   {
+    src: '/src/assets/concombre.jpeg',
+    alt: 'Énergie renouvelable',
+    caption: 'Concombre',
+  },
+
+   {
+    src: '/src/assets/papagne.jpeg',
+    alt: 'Énergie renouvelable',
+    caption: 'Papagne Maradona',
+  },
+   {
+    src: '/src/assets/citronnelle.jpeg',
+    alt: 'Énergie renouvelable',
+    caption: 'Citronnelle',
+  },
+
+  {
+    src: '/src/assets/equi.jpg',
+    alt: 'Énergie renouvelable',
+    caption: 'Our band',
+  },
+
+  {
+    src: '/src/assets/et.jpg',
+    alt: 'Énergie renouvelable',
+    caption: 'Culture',
   },
 ];
 
@@ -34,7 +89,7 @@ function Gallery() {
 
   return (
     <section className="gallery-section">
-      <h2>Galerie de la ferme FL-AGROLEADER</h2>
+      <h2>Galerie de la ferme <BrandName /></h2>
 
       <div className="gallery-grid">
         {images.map(({ src, alt, caption }, idx) => (

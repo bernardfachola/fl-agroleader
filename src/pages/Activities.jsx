@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Activities.css';
+import BrandName from '../components/BrandName';
 
 function Activities() {
   const activities = [
@@ -8,7 +9,7 @@ function Activities() {
       description:
         "Production de légumes frais (tomates, piments, légumes feuilles...) dans le respect des normes durables et biologiques.",
       image:
-        'https://images.unsplash.com/photo-1615392368184-1e651fadbd4b?auto=format&fit=crop&w=600&q=80',
+        '/src/assets/agro.jpg',
       details:
         "Notre ferme utilise des techniques modernes d'agriculture durable, combinant respect de l'environnement et efficacité. Nous cultivons principalement des tomates, piments, et légumes feuilles, avec un soin particulier à la qualité et à la traçabilité."
     },
@@ -17,7 +18,7 @@ function Activities() {
       description:
         "Élevage de poulets de chair, pondeuses, cailles... avec des techniques innovantes pour garantir une production saine et efficace.",
       image:
-        'https://images.unsplash.com/photo-1589712234518-97f6737a75b4?auto=format&fit=crop&w=600&q=80',
+        '/src/assets/esca.jpg',
       details:
         "Nous pratiquons un élevage respectueux du bien-être animal, avec une attention particulière à la santé et à la nutrition des poulets et cailles, afin de garantir une viande de qualité et saine."
     },
@@ -26,7 +27,7 @@ function Activities() {
       description:
         "Sessions pratiques et théoriques pour former les jeunes entrepreneurs dans l’agriculture et l’élevage.",
       image:
-        'https://images.unsplash.com/photo-1573497019449-89db844f78a8?auto=format&fit=crop&w=600&q=80',
+        '/src/assets/formation.jpg',
       details:
         "FL-AGROLEADER organise régulièrement des formations et ateliers pour transmettre son savoir-faire aux jeunes entrepreneurs agricoles, couvrant les bonnes pratiques, la gestion et les innovations."
     },
@@ -35,7 +36,7 @@ function Activities() {
       description:
         "Valorisation des énergies propres (solaire, biogaz) pour une agriculture durable et respectueuse de l'environnement.",
       image:
-        'https://images.unsplash.com/photo-1585120622025-5c5c5c5c5c5c?auto=format&fit=crop&w=600&q=80',
+        '/src/assets/renouvelable.jpg',
       details:
         "Nous intégrons des solutions d’énergie renouvelable comme les panneaux solaires et la production de biogaz pour rendre nos activités plus écologiques et autonomes."
     }
@@ -58,7 +59,9 @@ function Activities() {
     <section className="activities-section">
       <h2>Nos Activités</h2>
       <p className="activities-subtitle">
-        Découvrez les principaux secteurs d'activité de FL-AGROLEADER.
+        Découvrez les principaux secteurs d'activité de <span style={{ color: '#32A000' }}>FL</span>
+      <span style={{ color: '#32A000', margin: '0 5px' }}>AGRO</span>
+      <span style={{ color: '#32A000' }}>LEADER</span> .
       </p>
 
       <div className="activities-grid">

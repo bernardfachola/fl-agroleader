@@ -6,12 +6,12 @@
   font-family: 'Poppins', sans-serif;
   text-align: center;
   color: #8f0c0c;
-  background: rgb(207, 248, 250); /* Retrait du fond image */
+  background: rgb(212, 243, 245); /* Retrait du fond image */
 }
 
 .contact-section h2 {
   font-size: 2.5rem;
-  color: #45d64a;
+  color: #32A000 ;
   margin-bottom: 10px;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .contact-form button {
-  background-color: #45d64a;
+  background-color: #32A000 ;
   color: white;
   font-weight: bold;
   border: none;
@@ -117,7 +117,7 @@
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
+  background-color: #ffae00;
 }
 
 @media (max-width: 768px) {

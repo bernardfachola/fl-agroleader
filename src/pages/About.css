@@ -1,90 +1,66 @@
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9fbfc;
-  color: #222;
+.about-section {
+  background: transparent;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  border-radius: 3%;
+
 }
 
-.about-container {
+.about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.about-content {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
   gap: 40px;
   flex-wrap: wrap;
 }
 
-/* Wrapper pour image + vidéo */
-.media-wrapper {
-  flex: 1;
-  min-width: 300px;
+.media-column {
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.about-image {
+.about-image,
+.about-video {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  border-radius: 10px;
   object-fit: cover;
 }
 
-.about-video {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  outline: none;
-}
-
-/* 
-.about-section {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0px auto 0 auto;
-  background-color: rgb(202, 248, 250);
-  border-radius: 15px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-} */
-
-
-/* Texte */
-.about-text {
-  flex: 1.2;
-  font-family: 'Poppins', sans-serif;
+.text-column {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
   color: white;
 }
 
-.about-text h2 {
-  font-size: 2rem;
-  color: rgb(47, 196, 2); /* Bleu vif */
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
-}
-
-.about-text p {
-  font-size: 1.15rem;
-  line-height: 1.8;
-  margin-bottom: 30px;
-  color: white;
-}
-
-.highlight {
-  color: rgb(250, 185, 5);
-  font-weight: 600;
+.text-column h3 {
+  font-size: 1.4rem;
+  color: #32A000;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-  .about-container {
+  .about-content {
     flex-direction: column;
-    text-align: center;
   }
 
-  .about-text {
-    font-size: 1rem;
-  }
-
-  .about-text h2 {
-    font-size: 1.5rem;
+  .media-column,
+  .text-column {
+    flex: 1 1 100%;
   }
 }
